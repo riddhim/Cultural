@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            #container {
+                    width: 200px;
+                    height: 200px;
+                    margin: 40px auto;
+                    border: 1px solid #000;
+                    display:grid;
+                    grid-template-columns:30px;
+                    grid-template-rows:30px;
+                    place-content: center;
+                    border-radius: 50%;
+                    }
+                    .item {
+                    grid-area:1/1;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 100%;
+                    background: white;
+                    animation: spin 14s var(--d,0s) linear infinite; /* duration = 12s, numbor of item = 6 so a delay of 12/6 = 2s */
+                    transform:rotate(0) translate(100px) rotate(0);
+                    }
+                    @keyframes spin {
+                    100% {
+                        transform:rotate(1turn) translate(100px) rotate(-1turn);
+                    }
+                    }
+                    .europe{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .antartica{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .sa{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .na{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .asia{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .aus{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+                    .africa{
+                        height: 0.5cm;
+                        width: 2cm;
+                    }
+        </style>
+    </head>
+    <body>
+        <div id="container" style="margin-top: 15%;">
+            
+            <div class="item" style="--d:0s"><img src="europe1.png" class="europe"></div>
+            <div class="item" style="--d:-2s"><img src="antartica1.png" class="antartica"></div>
+            <div class="item" style="--d:-4s"><img src="sa1.png" class="sa"></div>
+            <div class="item" style="--d:-6s"><img src="na1.png" class="na"></div>
+            <div class="item" style="--d:-8s"><img src="aus1.png" class="aus"></div>
+            <div class="item" style="--d:-10s"><img src="asia1.png" class="asia"></div>
+            <div class="item" style="--d:-12s"><img src="africa1.png" class="africa"></div>
+          </div>
+    </body>
+</html>
